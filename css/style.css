@@ -1,0 +1,153 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica;
+}
+
+body {
+    background-image:linear-gradient(to left,#9370ff,#8ca5d7,#5771a0);
+    background-size: 500%,100%;
+	
+	font-family:'lucida grande',verdana,helvetica,arial,sans-serif;
+	font-size:100%;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	height: 90%;
+    animation: degrade 5s  infinite alternate ;
+    width: 100%;
+   
+   
+   
+	
+}
+@keyframes degrade {
+    0%{
+        background-position-x: 0%;
+    }
+    100%{
+        background-position-x: 100%;
+    }
+    
+}
+nav {
+	width: 100%;
+	background: #010101;
+	position: fixed;
+	top: 0;
+	z-index: 100;
+    text-align: center;
+}
+
+nav ul {
+	text-align: center;
+    
+}
+
+nav ul li {
+    text-align: center;
+	display: inline-block;
+}
+
+nav a {
+	padding: 10px 40px;
+	text-decoration: none;
+	color: white;
+	font-size: 1.4em;
+    text-align: center;
+}
+
+nav a:hover {
+	color: #8844ee;
+    
+}
+.img1{
+    width: 20%;
+    padding: 100% ;
+}
+.nav-pills{
+    margin-inline-start: 20%;
+}
+.java{
+    width: 10%;
+    max-width: 105px;
+}
+.tec{
+   
+   padding: 0%;
+    margin: 80px;
+    margin-top: 0;
+
+}
+.eu{
+    padding: 0%;
+    margin: 80px;
+    margin-top: 10%;
+    
+}
+.exp{
+    padding: 0%;
+    margin: 80px;
+    margin-top: 0;
+}
+.info{
+    padding: 0%;
+    margin: 80px;
+    margin-top: 0;
+}
+
+h1, h2,h3,h4, a {
+	font-family: Industry, monospace;
+	color: #470013;
+}
+
+h1 {
+	text-align: center;
+	margin-top: 20px;
+}
+h4{
+    text-align: center;
+	margin-top: 100px;
+    margin-bottom: 2em;
+}
+#linha-horizontal {
+    width: 100%;
+    border: 1px solid rgb(192, 191, 191);
+}
+section {
+	max-width: 800px;
+	margin: 100px auto;
+}
+
+section::after, section::before {
+	content: '';
+	display: table;
+	clear: both;
+}
+
+.grid-text {
+	width: calc(60% - 40px);
+}
+
+section > div {
+	margin: 0 20px;
+	float: left;
+    
+}
+
+[data-anime]{
+    opacity: 0;
+    transition: .5s;
+    margin-top: 2%;
+}
+[data-anime="left"]{
+    transform: translate3d(-70px, 0,0);
+}
+[data-anime="right"]{
+    transform: translate3d(70px, 0,0);
+}
+[data-anime].animate{
+    opacity: 1;
+    transform: translate3d(0px, 0,0);
+}
